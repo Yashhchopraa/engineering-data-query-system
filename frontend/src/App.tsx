@@ -13,7 +13,6 @@ import {
   Maximize,
   ScanLine,
   List,
-  Star,
   FileText,
   Info,
   Hexagon,
@@ -132,12 +131,8 @@ function App() {
      TAB STATE
   ===================================================== */
 
-  const [activeTab, setActiveTab] =
-    useState<
-      "results" |
-      "recommendations" |
-      "details"
-    >("results");
+const [activeTab, setActiveTab] =
+  useState<"results" | "details">("results");
 
 
   /* =====================================================
@@ -2316,31 +2311,6 @@ function App() {
               type="button"
               className={
                 `tab ${
-                  activeTab === "recommendations"
-                    ? "active-tab"
-                    : ""
-                }`
-              }
-              onClick={() =>
-                setActiveTab(
-                  "recommendations"
-                )
-              }
-            >
-
-              <Star size={15} />
-
-              <span>
-                Recommendations
-              </span>
-
-            </button>
-
-
-            <button
-              type="button"
-              className={
-                `tab ${
                   activeTab === "details"
                     ? "active-tab"
                     : ""
@@ -2518,41 +2488,6 @@ function App() {
             </div>
 
           )}
-
-
-          {/* RECOMMENDATIONS */}
-
-          {activeTab === "recommendations" && (
-
-            <div className="results-content">
-
-              <div className="tab-placeholder">
-
-                <div className="tab-placeholder-icon">
-
-                  <Star
-                    size={28}
-                    strokeWidth={1.6}
-                  />
-
-                </div>
-
-                <h3>
-                  Recommendations
-                </h3>
-
-                <p>
-                  Recommendations will appear
-                  here once the query intelligence
-                  layer is connected.
-                </p>
-
-              </div>
-
-            </div>
-
-          )}
-
 
           {/* DETAILS */}
 
