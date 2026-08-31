@@ -6,7 +6,7 @@
 
 )
 
-$ProjectRoot = "D:\engineering-data-query-system"
+$ProjectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 Set-Location $ProjectRoot
 
