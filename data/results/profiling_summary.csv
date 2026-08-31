@@ -1,0 +1,7 @@
+Metric,Value
+Spatial entities,1000
+EAV rows,5031
+Unique attributes,20
+Duplicate cases,10
+Invalid numeric values,10
+Schema pollution records,10

@@ -1,0 +1,23 @@
+{
+    "input": {
+        "spatial_entities": 1000,
+        "raw_eav_rows": 5031,
+        "unique_attributes": 20
+    },
+    "duplicate_resolution": {
+        "duplicate_uid_attribute_cases": 10,
+        "duplicate_eav_records_involved": 20,
+        "eav_rows_after_cleaning": 5021,
+        "resolution_strategy": "Keep earliest inserted value"
+    },
+    "flattened_feature_table": {
+        "rows": 1000,
+        "columns": 27,
+        "attribute_columns": 20
+    },
+    "output_files": {
+        "full_feature_table": "D:\\engineering-data-query-system\\data\\results\\transformed_feature_table.csv",
+        "feature_sample": "D:\\engineering-data-query-system\\data\\results\\transformed_feature_sample.csv"
+    },
+    "transformation_time_seconds": 0.031373
+}
